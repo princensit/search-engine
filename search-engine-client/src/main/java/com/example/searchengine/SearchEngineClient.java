@@ -6,7 +6,6 @@ package com.example.searchengine;
  * @author prince.raj
  *
  */
-@Slf4j
 public class SearchEngineClient {
 
 }
