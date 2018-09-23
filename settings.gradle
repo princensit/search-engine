@@ -1,0 +1,5 @@
+rootProject.name = 'search-engine'
+
+include 'search-engine-model'
+include 'search-engine-client'
+include 'search-engine-service'
