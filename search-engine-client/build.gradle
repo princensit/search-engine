@@ -1,6 +1,6 @@
 version = '0.0.1-SNAPSHOT'
 
 dependencies {
-    compile project (':search-engine-model')
-    //compile('com.example.search-engine-model:0.0.1-SNAPSHOT')
+    compile("com.example.searchengine:search-engine-model:${rootProject.searchEngineModelVersion}")
 }
+
