@@ -24,9 +24,35 @@
     </parent>
 
     <properties>
+        <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
+        <javadoc.basepath>${project.basedir}/javadoc</javadoc.basepath>
+        <javadoc.output.path>${javadoc.basepath}</javadoc.output.path>
+
+        <springfox.version>2.9.2</springfox.version>
     </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <doctitle>${project.name} (${project.version})</doctitle>
+                    <validateLinks>true</validateLinks>
+                    <detectLinks>true</detectLinks>
+                    <charset>${project.reporting.outputEncoding}</charset>
+                    <header>${project.name}</header>
+                    <bottom><![CDATA[<div style="font-size: 14px;"><br /><br />Copyright &#169;]]></bottom>
+                    <footer>${project.name}</footer>
+                    <docfilessubdirs>true</docfilessubdirs>
+                    <verbose>true</verbose>
+                    <reportOutputDirectory>${javadoc.output.path}</reportOutputDirectory>
+                    <destDir>${project.version}</destDir>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
