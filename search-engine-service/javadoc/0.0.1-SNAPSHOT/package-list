@@ -1,0 +1,6 @@
+com.example.searchengine
+com.example.searchengine.controller
+com.example.searchengine.exception
+com.example.searchengine.health
+com.example.searchengine.service
+com.example.searchengine.util

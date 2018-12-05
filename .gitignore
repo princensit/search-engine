@@ -3,7 +3,6 @@
 **/target/
 **/bin/
 **/build/
-**/javadoc/
 gradle-app.setting
 .gradletasknamecache
 !gradle/wrapper/gradle-wrapper.jar
